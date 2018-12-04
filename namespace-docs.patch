@@ -1,0 +1,42 @@
+diff --git a/Generator/Billow.cs b/Generator/Billow.cs
+index dc9af92..1def045 100755
+--- a/Generator/Billow.cs
++++ b/Generator/Billow.cs
+@@ -1,6 +1,9 @@
+ ﻿using System;
+ using UnityEngine;
+ 
++/// <summary>
++/// Generators to create noise patterns
++/// </summary> 
+ namespace LibNoise.Generator
+ {
+     /// <summary>
+diff --git a/ModuleBase.cs b/ModuleBase.cs
+index c6cef0f..96a8a1c 100755
+--- a/ModuleBase.cs
++++ b/ModuleBase.cs
+@@ -3,6 +3,9 @@ using System.Xml.Serialization;
+ using UnityEngine;
+ using Debug = System.Diagnostics.Debug;
+ 
++/// <summary>
++/// LibNoise.Unity classes
++/// </summary> 
+ namespace LibNoise
+ {
+ 
+diff --git a/Operator/Abs.cs b/Operator/Abs.cs
+index e56064f..e246530 100755
+--- a/Operator/Abs.cs
++++ b/Operator/Abs.cs
+@@ -1,6 +1,9 @@
+ ﻿using System;
+ using System.Diagnostics;
+ 
++/// <summary>
++/// Operators to modify input noise
++/// </summary>
+ namespace LibNoise.Operator
+ {
+     /// <summary>

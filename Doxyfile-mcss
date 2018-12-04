@@ -1,0 +1,11 @@
+@INCLUDE                = Doxyfile
+OUTPUT_DIRECTORY        = docs-build
+GENERATE_HTML           = NO
+GENERATE_XML            = YES
+GENERATE_LATEX          = NO
+XML_PROGRAMLISTING      = NO
+M_LINKS_NAVBAR1         = namespaces
+M_LINKS_NAVBAR2         = \
+    annotated \
+    "<a href=\"https://github.com/ricardojmendez/LibNoise.Unity\">GitHub</a>"
+USE_MDFILE_AS_MAINPAGE  = docs-index.md

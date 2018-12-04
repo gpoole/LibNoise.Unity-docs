@@ -1,0 +1,6 @@
+[submodule "m.css"]
+	path = m.css
+	url = https://github.com/mosra/m.css
+[submodule "LibNoise.Unity"]
+	path = LibNoise.Unity
+	url = https://github.com/ricardojmendez/LibNoise.Unity.git

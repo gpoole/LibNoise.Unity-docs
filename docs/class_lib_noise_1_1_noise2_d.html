@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LibNoise::Noise2D class | LibNoise.Unity</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+doxygen.compiled.css" />
+  <link rel="icon" href="favicon-dark.png" type="image/png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m">LibNoise.Unity</a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-dox-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path d="m6 0c-3.3144 0-6 2.6856-6 6 0 3.3144 2.6856 6 6 6 1.4858 0 2.8463-0.54083 3.8945-1.4355-0.0164 0.33797 0.14734 0.75854 0.5 1.1504l3.2227 3.7891c0.55185 0.6139 1.4517 0.66544 2.002 0.11524 0.55022-0.55022 0.49866-1.4501-0.11524-2.002l-3.7891-3.2246c-0.39184-0.35266-0.81242-0.51469-1.1504-0.5 0.89472-1.0482 1.4355-2.4088 1.4355-3.8945 0-3.3128-2.6856-5.998-6-5.998zm0 1.5625a4.4375 4.4375 0 0 1 4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375-4.4375 4.4375 4.4375 0 0 1 4.4375-4.4375z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="namespaces.html">Namespaces</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="2">
+            <li><a href="annotated.html">Classes</a></li>
+            <li><a href="https://github.com/ricardojmendez/LibNoise.Unity">GitHub</a></li>
+            <li class="m-show-m"><a href="#search" class="m-dox-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <path d="m6 0c-3.3144 0-6 2.6856-6 6 0 3.3144 2.6856 6 6 6 1.4858 0 2.8463-0.54083 3.8945-1.4355-0.0164 0.33797 0.14734 0.75854 0.5 1.1504l3.2227 3.7891c0.55185 0.6139 1.4517 0.66544 2.002 0.11524 0.55022-0.55022 0.49866-1.4501-0.11524-2.002l-3.7891-3.2246c-0.39184-0.35266-0.81242-0.51469-1.1504-0.5 0.89472-1.0482 1.4355-2.4088 1.4355-3.8945 0-3.3128-2.6856-5.998-6-5.998zm0 1.5625a4.4375 4.4375 0 0 1 4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375-4.4375 4.4375 4.4375 0 0 1 4.4375-4.4375z"/>
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="namespace_lib_noise.html">LibNoise</a>::<wbr/></span>Noise2D <span class="m-thin">class</span>
+        </h1>
+        <p>Provides a two-dimensional noise map.</p>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+                <li><a href="#pro-methods">Protected functions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+<p>This covers most of the functionality from <a href="namespace_lib_noise.html" class="m-dox">LibNoise</a>&#x27;s noiseutils library, but the method calls might not be the same. See the tutorials project if you&#x27;re wondering which calls are equivalent.</p>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <dl class="m-dox">
+            <dt>
+              <span class="m-dox-wrap-bumper"><a href="#a53ddafc2f6a099d939f1eaad03a1d8fa" class="m-dox-self" name="a53ddafc2f6a099d939f1eaad03a1d8fa">Noise2D</a>(</span><span class="m-dox-wrap">) <span class="m-label m-flat m-warning">protected</span></span>
+            </dt>
+            <dd>Initializes a new instance of <a href="class_lib_noise_1_1_noise2_d.html" class="m-dox">Noise2D</a>.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper"><a href="#a8729ca7498a796e7c46317e3d40bdfa8" class="m-dox">Noise2D</a>(</span><span class="m-dox-wrap">int size)</span>
+            </dt>
+            <dd>Initializes a new instance of <a href="class_lib_noise_1_1_noise2_d.html" class="m-dox">Noise2D</a>.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper"><a href="#a4f2c693c60b8327c5c906f137293a8c2" class="m-dox">Noise2D</a>(</span><span class="m-dox-wrap">int size,
+              <a href="class_lib_noise_1_1_module_base.html" class="m-dox">ModuleBase</a> generator)</span>
+            </dt>
+            <dd>Initializes a new instance of <a href="class_lib_noise_1_1_noise2_d.html" class="m-dox">Noise2D</a>.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper"><a href="#a89d44465cd842be3f3a8b31e78f43072" class="m-dox">Noise2D</a>(</span><span class="m-dox-wrap">int width,
+              int height,
+              <a href="class_lib_noise_1_1_module_base.html" class="m-dox">ModuleBase</a> generator = null)</span>
+            </dt>
+            <dd>Initializes a new instance of <a href="class_lib_noise_1_1_noise2_d.html" class="m-dox">Noise2D</a>.</dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-dox">
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a867fe1a88b54558bead78d9afdc0910e" class="m-dox">GetNormalizedData</a>(</span><span class="m-dox-wrap">bool isCropped = true,
+              int xCrop = 0,
+              int yCrop = 0) -&gt; float [,]</span>
+            </dt>
+            <dd>Gets normalized noise map data with all values in the set of {0..1}.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ab2df7d84610548485750ada563a21afe" class="m-dox">GetData</a>(</span><span class="m-dox-wrap">bool isCropped = true,
+              int xCrop = 0,
+              int yCrop = 0,
+              bool isNormalized = false) -&gt; float [,]</span>
+            </dt>
+            <dd>Gets noise map data.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">void <a href="#abac1753aea45f939e42cdd236ed9b2de" class="m-dox">Clear</a>(</span><span class="m-dox-wrap">float value = 0f)</span>
+            </dt>
+            <dd>Clears the noise map.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">void <a href="#ac771707226342fb931f5d25365728503" class="m-dox">GeneratePlanar</a>(</span><span class="m-dox-wrap">double left,
+              double right,
+              double top,
+              double bottom,
+              bool isSeamless = true)</span>
+            </dt>
+            <dd>Generates a non-seamless planar projection of the noise map.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">void <a href="#a02daa1c914c5dd0dc590f6f879661091" class="m-dox">GenerateCylindrical</a>(</span><span class="m-dox-wrap">double angleMin,
+              double angleMax,
+              double heightMin,
+              double heightMax)</span>
+            </dt>
+            <dd>Generates a cylindrical projection of the noise map.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">void <a href="#a68c918170dee86068f4afcba0734e5e0" class="m-dox">GenerateSpherical</a>(</span><span class="m-dox-wrap">double south,
+              double north,
+              double west,
+              double east)</span>
+            </dt>
+            <dd>Generates a spherical projection of the noise map.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a8f5efbd701d1f20f2a9a6c0631283749" class="m-dox">GetTexture</a>(</span><span class="m-dox-wrap">) -&gt; Texture2D</span>
+            </dt>
+            <dd>Creates a grayscale texture map for the current content of the noise map.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ac378ab504b642e6da63ae4e3c3384b4f" class="m-dox">GetTexture</a>(</span><span class="m-dox-wrap">Gradient gradient) -&gt; Texture2D</span>
+            </dt>
+            <dd>Creates a texture map for the current content of the noise map.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ab34a1fa5128c92fc67198038df677b35" class="m-dox">GetNormalMap</a>(</span><span class="m-dox-wrap">float intensity) -&gt; Texture2D</span>
+            </dt>
+            <dd>Creates a normal map for the current content of the noise map.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">void <a href="#a624a63bd15c55bd226258058726354b3" class="m-dox-self" name="a624a63bd15c55bd226258058726354b3">Dispose</a>(</span><span class="m-dox-wrap">)</span>
+            </dt>
+            <dd>Immediately releases the unmanaged resources used by this object.</dd>
+          </dl>
+        </section>
+        <section id="pro-methods">
+          <h2><a href="#pro-methods">Protected functions</a></h2>
+          <dl class="m-dox">
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a937c13bf6b73e1e9b85e499f97bd1eb2" class="m-dox">Disposing</a>(</span><span class="m-dox-wrap">) -&gt; bool <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Immediately releases the unmanaged resources used by this object.</dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-dox-details" id="a8729ca7498a796e7c46317e3d40bdfa8"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper"> LibNoise::<wbr />Noise2D::<wbr /></span><span class="m-dox-wrap"><span class="m-dox-wrap-bumper"><a href="#a8729ca7498a796e7c46317e3d40bdfa8" class="m-dox-self">Noise2D</a>(</span><span class="m-dox-wrap">int size)</span></span>
+            </h3>
+            <p>Initializes a new instance of <a href="class_lib_noise_1_1_noise2_d.html" class="m-dox">Noise2D</a>.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">size</td>
+                  <td>The width and height of the noise map.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+          <section class="m-dox-details" id="a4f2c693c60b8327c5c906f137293a8c2"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper"> LibNoise::<wbr />Noise2D::<wbr /></span><span class="m-dox-wrap"><span class="m-dox-wrap-bumper"><a href="#a4f2c693c60b8327c5c906f137293a8c2" class="m-dox-self">Noise2D</a>(</span><span class="m-dox-wrap">int size,
+              <a href="class_lib_noise_1_1_module_base.html" class="m-dox">ModuleBase</a> generator)</span></span>
+            </h3>
+            <p>Initializes a new instance of <a href="class_lib_noise_1_1_noise2_d.html" class="m-dox">Noise2D</a>.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">size</td>
+                  <td>The width and height of the noise map.</td>
+                </tr>
+                <tr>
+                  <td>generator</td>
+                  <td>The generator module.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+          <section class="m-dox-details" id="a89d44465cd842be3f3a8b31e78f43072"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper"> LibNoise::<wbr />Noise2D::<wbr /></span><span class="m-dox-wrap"><span class="m-dox-wrap-bumper"><a href="#a89d44465cd842be3f3a8b31e78f43072" class="m-dox-self">Noise2D</a>(</span><span class="m-dox-wrap">int width,
+              int height,
+              <a href="class_lib_noise_1_1_module_base.html" class="m-dox">ModuleBase</a> generator = null)</span></span>
+            </h3>
+            <p>Initializes a new instance of <a href="class_lib_noise_1_1_noise2_d.html" class="m-dox">Noise2D</a>.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">width</td>
+                  <td>The width of the noise map.</td>
+                </tr>
+                <tr>
+                  <td>height</td>
+                  <td>The height of the noise map.</td>
+                </tr>
+                <tr>
+                  <td>generator</td>
+                  <td>The generator module.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+          <section class="m-dox-details" id="a867fe1a88b54558bead78d9afdc0910e"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">float [,] LibNoise::<wbr />Noise2D::<wbr /></span><span class="m-dox-wrap"><span class="m-dox-wrap-bumper"><a href="#a867fe1a88b54558bead78d9afdc0910e" class="m-dox-self">GetNormalizedData</a>(</span><span class="m-dox-wrap">bool isCropped = true,
+              int xCrop = 0,
+              int yCrop = 0)</span></span>
+            </h3>
+            <p>Gets normalized noise map data with all values in the set of {0..1}.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">isCropped</td>
+                  <td>Indicates whether to select the cropped (default) or uncropped noise map data.</td>
+                </tr>
+                <tr>
+                  <td>xCrop</td>
+                  <td>This value crops off data from the right of the noise map data.</td>
+                </tr>
+                <tr>
+                  <td>yCrop</td>
+                  <td>This value crops off data from the bottom of the noise map data.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>The normalized noise map data.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-dox-details" id="ab2df7d84610548485750ada563a21afe"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">float [,] LibNoise::<wbr />Noise2D::<wbr /></span><span class="m-dox-wrap"><span class="m-dox-wrap-bumper"><a href="#ab2df7d84610548485750ada563a21afe" class="m-dox-self">GetData</a>(</span><span class="m-dox-wrap">bool isCropped = true,
+              int xCrop = 0,
+              int yCrop = 0,
+              bool isNormalized = false)</span></span>
+            </h3>
+            <p>Gets noise map data.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">isCropped</td>
+                  <td>Indicates whether to select the cropped (default) or uncropped noise map data.</td>
+                </tr>
+                <tr>
+                  <td>xCrop</td>
+                  <td>This value crops off data from the right of the noise map data.</td>
+                </tr>
+                <tr>
+                  <td>yCrop</td>
+                  <td>This value crops off data from the bottom of the noise map data.</td>
+                </tr>
+                <tr>
+                  <td>isNormalized</td>
+                  <td>Indicates whether to normalize noise map data.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>The noise map data.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-dox-details" id="abac1753aea45f939e42cdd236ed9b2de"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">void LibNoise::<wbr />Noise2D::<wbr /></span><span class="m-dox-wrap"><span class="m-dox-wrap-bumper"><a href="#abac1753aea45f939e42cdd236ed9b2de" class="m-dox-self">Clear</a>(</span><span class="m-dox-wrap">float value = 0f)</span></span>
+            </h3>
+            <p>Clears the noise map.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">value</td>
+                  <td>The constant value to clear the noise map with.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+          <section class="m-dox-details" id="ac771707226342fb931f5d25365728503"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">void LibNoise::<wbr />Noise2D::<wbr /></span><span class="m-dox-wrap"><span class="m-dox-wrap-bumper"><a href="#ac771707226342fb931f5d25365728503" class="m-dox-self">GeneratePlanar</a>(</span><span class="m-dox-wrap">double left,
+              double right,
+              double top,
+              double bottom,
+              bool isSeamless = true)</span></span>
+            </h3>
+            <p>Generates a non-seamless planar projection of the noise map.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">left</td>
+                  <td>The clip region to the left.</td>
+                </tr>
+                <tr>
+                  <td>right</td>
+                  <td>The clip region to the right.</td>
+                </tr>
+                <tr>
+                  <td>top</td>
+                  <td>The clip region to the top.</td>
+                </tr>
+                <tr>
+                  <td>bottom</td>
+                  <td>The clip region to the bottom.</td>
+                </tr>
+                <tr>
+                  <td>isSeamless</td>
+                  <td>Indicates whether the resulting noise map should be seamless.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+          <section class="m-dox-details" id="a02daa1c914c5dd0dc590f6f879661091"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">void LibNoise::<wbr />Noise2D::<wbr /></span><span class="m-dox-wrap"><span class="m-dox-wrap-bumper"><a href="#a02daa1c914c5dd0dc590f6f879661091" class="m-dox-self">GenerateCylindrical</a>(</span><span class="m-dox-wrap">double angleMin,
+              double angleMax,
+              double heightMin,
+              double heightMax)</span></span>
+            </h3>
+            <p>Generates a cylindrical projection of the noise map.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">angleMin</td>
+                  <td>The maximum angle of the clip region.</td>
+                </tr>
+                <tr>
+                  <td>angleMax</td>
+                  <td>The minimum angle of the clip region.</td>
+                </tr>
+                <tr>
+                  <td>heightMin</td>
+                  <td>The minimum height of the clip region.</td>
+                </tr>
+                <tr>
+                  <td>heightMax</td>
+                  <td>The maximum height of the clip region.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+          <section class="m-dox-details" id="a68c918170dee86068f4afcba0734e5e0"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">void LibNoise::<wbr />Noise2D::<wbr /></span><span class="m-dox-wrap"><span class="m-dox-wrap-bumper"><a href="#a68c918170dee86068f4afcba0734e5e0" class="m-dox-self">GenerateSpherical</a>(</span><span class="m-dox-wrap">double south,
+              double north,
+              double west,
+              double east)</span></span>
+            </h3>
+            <p>Generates a spherical projection of the noise map.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">south</td>
+                  <td>The clip region to the south.</td>
+                </tr>
+                <tr>
+                  <td>north</td>
+                  <td>The clip region to the north.</td>
+                </tr>
+                <tr>
+                  <td>west</td>
+                  <td>The clip region to the west.</td>
+                </tr>
+                <tr>
+                  <td>east</td>
+                  <td>The clip region to the east.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+          <section class="m-dox-details" id="a8f5efbd701d1f20f2a9a6c0631283749"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">Texture2D LibNoise::<wbr />Noise2D::<wbr /></span><span class="m-dox-wrap"><span class="m-dox-wrap-bumper"><a href="#a8f5efbd701d1f20f2a9a6c0631283749" class="m-dox-self">GetTexture</a>(</span><span class="m-dox-wrap">)</span></span>
+            </h3>
+            <p>Creates a grayscale texture map for the current content of the noise map.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>The created texture map.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-dox-details" id="ac378ab504b642e6da63ae4e3c3384b4f"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">Texture2D LibNoise::<wbr />Noise2D::<wbr /></span><span class="m-dox-wrap"><span class="m-dox-wrap-bumper"><a href="#ac378ab504b642e6da63ae4e3c3384b4f" class="m-dox-self">GetTexture</a>(</span><span class="m-dox-wrap">Gradient gradient)</span></span>
+            </h3>
+            <p>Creates a texture map for the current content of the noise map.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">gradient</td>
+                  <td>The gradient to color the texture map with.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>The created texture map.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-dox-details" id="ab34a1fa5128c92fc67198038df677b35"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">Texture2D LibNoise::<wbr />Noise2D::<wbr /></span><span class="m-dox-wrap"><span class="m-dox-wrap-bumper"><a href="#ab34a1fa5128c92fc67198038df677b35" class="m-dox-self">GetNormalMap</a>(</span><span class="m-dox-wrap">float intensity)</span></span>
+            </h3>
+            <p>Creates a normal map for the current content of the noise map.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">intensity</td>
+                  <td>The scaling of the normal map values.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>The created normal map.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-dox-details" id="a937c13bf6b73e1e9b85e499f97bd1eb2"><div>
+            <h3>
+              <span class="m-dox-wrap-bumper">bool LibNoise::<wbr />Noise2D::<wbr /></span><span class="m-dox-wrap"><span class="m-dox-wrap-bumper"><a href="#a937c13bf6b73e1e9b85e499f97bd1eb2" class="m-dox-self">Disposing</a>(</span><span class="m-dox-wrap">) <span class="m-label m-warning">virtual</span> <span class="m-label m-warning">protected</span></span></span>
+            </h3>
+            <p>Immediately releases the unmanaged resources used by this object.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>True if the object is completely disposed.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-dox-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-dox-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-dox-search-content">
+          <input type="search" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" />
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            Search for symbols, directories, files, pages or modules. You can omit any
+            prefix from the symbol or file path; adding a <code>:</code> or <code>/</code>
+            suffix lists all members of given symbol or directory. Navigate through the
+            list using <span class="m-label m-dim">&darr;</span> and
+            <span class="m-label m-dim">&uarr;</span>, press
+            <span class="m-label m-dim">Enter</span> to go.
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search.js"></script>
+<script src="searchdata.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>LibNoise.Unity. Created by <a href="https://doxygen.org/">Doxygen</a> 1.8.14 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>
