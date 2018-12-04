@@ -3,7 +3,7 @@
 Automatic documentation generator for the [LibNoise.Unity project](https://github.com/ricardojmendez/LibNoise.Unity).
 It uses [Doxygen](http://www.doxygen.nl/) and the [m.css Doxygen theme](https://mcss.mosra.cz/doxygen/).
 
-You can view the documentation at (url).
+You can view the documentation at https://gpoole.github.io/LibNoise.Unity-docs/.
 
 ## Generating
 
